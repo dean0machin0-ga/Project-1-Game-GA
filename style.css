@@ -7,10 +7,14 @@
 /* element styles */
 
 body {
-    /* fonts */
     margin: 0;
     min-height: 100vh;
-    background-color: sandybrown;
+    background-color: rgb(41, 41, 101);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+h1 {font-size: 2.75rem;
+    color: darkgrey;
+    font-family: rubik moonrocks;
 }
