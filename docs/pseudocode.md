@@ -1,9 +1,3 @@
-----------------------------> P1 Planning <-------------------------------
-    
-> Game Choice { Spaceman }
-> 
-> "main" Wireframe { file:///C:/Users/katie/OneDrive/Documents/Software%20Engineering%20School/projectOneWireframe.pdf }
->
 > ---------------------------> Pseudocode <----------------------------- <
 > I want to make a working version of spaceman.
 > I hope to include a word catagory choice.
@@ -17,4 +11,3 @@
 >                2. coding
 >                3. animals
 >                4. food
->
