@@ -1,7 +1,7 @@
 /* global styles  */
 
 *{
-    /* border: 3px solid red; */
+    border: 3px solid red;
     box-sizing: border-box;
 }
 
@@ -10,9 +10,14 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: rgb(41, 41, 101);
+    /* background-color: rgb(41, 41, 101); */
     font-family: cursive;
     font-size: 16px;
+}
+
+header {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -23,6 +28,8 @@ h1 {
 
 h3 {
     font-size: 1.3rem;
+    margin-left: 70%;
+    /* margin-bottom: -95%; */
 }
 
 #slogan {
@@ -44,46 +51,77 @@ h3 {
 }
 
 .button-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: [first] 45px [line2] 45px [line3] 45px [line4] 45px [line5];   
+    flex-flow: row wrap;
+    padding: 1.0rem;
+    /* justify-content: space-evenly; */
+    /* gap: 0.3rem; */
+    /* align-content: ; */
 }
 
-.letter-wrapper {
+#rocket-message {
+
+}
+
+#solution-space {
+
+}
+
+.solution-wrapper {
     /* border: 3px solid purple; */
+    /* background-color: red; */
     display: grid;
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: auto;
+    column-gap: 0.25rem;
+    row-gap: 0.5rem;
     text-align: center;
+    padding: 1rem;
+    
 }
 
 .game-state-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex-grow: 5;
 }
+
+#message-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+}
+
 
 /* button styling*/
 
 button {
     font-size: 1.5rem;
     line-height: 1.75rem;
-    background-color: rgb(231, 27, 0);
-    color: rgb(255, 255, 52);
-    padding: 0.5rem;
+    /* background-color: rgb(231, 27, 0); */
+    /* color: rgb(255, 255, 52); */
+    padding: 0.7rem;
     border: 2px solid  rgb(247, 1, 227);
     border-style: inset;
     border-radius: 0.125rem;
-    transition: background-color
+    /* transition: background-color */
 }
 
+/* span { */
+    /* margin-bottom: -225%; */
+/* } */
 /* style */
 
 #rocket-graphic {
     max-height: 50vmin;
     border-radius: 2.0rem;
+    margin-left: 70%;
 }
 
 .hidden {
-    visibility: hidden;
+    /* visibility: hidden; */
 }

@@ -16,10 +16,10 @@ const INIT_STATE = {
 
 /*----- cached elements  -----*/
 
+const letterBtnEl = document.querySelector("#controller")
 
 
-
-
+const gameRestartEl = document.querySelector("#rocket-message");
 /*----- event listeners -----*/
 
 

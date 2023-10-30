@@ -20,3 +20,6 @@
 >                2. coding
 >                3. animals
 >                4. food
+>
+> The secret word grid is has to have a for loop for
+> regulating truthy or falsey inputs.
