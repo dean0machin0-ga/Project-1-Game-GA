@@ -1,6 +1,7 @@
 /* global styles  */
 
 *{
+    /* border: 3px solid red; */
     box-sizing: border-box;
 }
 
@@ -10,11 +11,79 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: rgb(41, 41, 101);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     font-size: 16px;
 }
 
-h1 {font-size: 2.75rem;
+h1 {
+    font-size: 3.1rem;
     color: darkgrey;
     font-family: rubik moonrocks;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+#slogan {
+    font-size: 1.8rem;
+    font-family: space grotesk;
+    color: rgb(255, 255, 52);
+}
+
+/* layout */
+
+.game-title {
+    text-align: center;
+}
+
+.container {
+    /* border: 3px solid purple; */
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.letter-wrapper {
+    /* border: 3px solid purple; */
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    text-align: center;
+}
+
+.game-state-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button styling*/
+
+button {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    background-color: rgb(231, 27, 0);
+    color: rgb(255, 255, 52);
+    padding: 0.5rem;
+    border: 2px solid  rgb(247, 1, 227);
+    border-style: inset;
+    border-radius: 0.125rem;
+    transition: background-color
+}
+
+/* style */
+
+#rocket-graphic {
+    max-height: 50vmin;
+    border-radius: 2.0rem;
+}
+
+.hidden {
+    visibility: hidden;
 }

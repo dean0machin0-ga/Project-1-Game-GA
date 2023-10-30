@@ -1,7 +1,9 @@
 console.log('js-loaded!')
 
 /*----- constants -----*/
-
+const INIT_STATE = {
+    
+}
 
 
 
