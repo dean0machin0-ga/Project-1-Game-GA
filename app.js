@@ -16,6 +16,15 @@ const INIT_STATE = {
 
 /*----- cached elements  -----*/
 
+const event = {
+    currentTarget: {
+        input: {
+            value: 'e'
+        }
+    }
+}
+
+
 const letterBtnEl = document.querySelectorAll("#controller")
 const solutionEl = document.querySelectorAll("#solution-display")
 
