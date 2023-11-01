@@ -1,11 +1,6 @@
-/* global styles  */
-
 *{
-    /* border: 3px solid red; */
     box-sizing: border-box;
 }
-
-/* element styles */
 
 body {
     margin: 0;
@@ -30,7 +25,7 @@ h1.underscore {
     font-size: 3.0rem;
     border: dotted red;
     background-color:blueviolet;
-    /* color: rgb(255, 255, 52) */
+    color: red
 }
 
 h3 {
@@ -54,33 +49,30 @@ h3 {
     margin-left: 70%;
 }
 
-#solution-space {
-}
+/* #solution-space {
+} */
 
 .game-title {
     text-align: center;
 }
 
 .container {
-    /* border: 3px solid purple; */
     width: 95vw;
     margin: 0 auto;
 }
 
 .guess-input-wrapper {
+    padding: 1.0rem;
+    margin-right: 70%;
     /* display: grid; */
     /* grid-template-columns: [first] 45px [line2] 45px [line3] 45px [line4] 45px [line5];    */
     /* flex-flow: row wrap; */
-    padding: 1.0rem;
-    margin-right: 70%;
     /* justify-content: space-evenly; */
     /* gap: 0.3rem; */
     /* align-content: ; */
 }
 
 .solution-wrapper {
-    /* border: 3px solid rgb(247, 1, 227); */
-    /* background-color: red; */
     display: grid;
     grid-template-columns: repeat(10, 2fr);
     grid-template-rows: auto;
@@ -104,23 +96,10 @@ h3 {
 }
 
 .hidden {
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
-
 /* OLD CODE */
-
-/* #rocket-message {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* } */
-    
-    /* button styling*/
-    
-    /* span { */
-        /* margin-bottom: -225%; */
-        /* } */
-        /* style */
 
         /* button {
             font-size: 1.5rem;
