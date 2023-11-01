@@ -1,61 +1,48 @@
 console.log('js-loaded!')
 
-/*----- constants -----*/
-// const INIT_STATE = {
-    
-    // }
-    
-    
-    
-    
-    /*----- state variables -----*/
-    const formLocation = document.querySelector('#guess-form')    
-    const letterBtnEl = document.querySelectorAll("#controller")
-    const solutionEl = document.querySelectorAll("#solution-display")
-    const gameRestartEl = document.querySelector("#rocket-message");
-    const wordToGuess = ["B", "E", "S", "t"]
-    const spaces = ["_", "_", "_", "_"]
-    
-    
-    
-    
-    
-    /*----- cached elements  -----*/
-    
 
-    
+/*----- state variables -----*/
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const solutionDisplay = document.querySelector('#solution-display')
+const formLocation = document.querySelector('#guess-form');  
+const letterBtnEl = document.querySelectorAll("#controller");
+const solutionEl = document.querySelectorAll("#solution-display");
+const gameRestartEl = document.querySelector("#rocket-message");
+const wordToGuess = ["B", "E", "S", "t"]
+const spaces = ["_", "_", "_", "_"]
 
-        for (let i = 0; i < wordToGuess.length; i++) {
-            const underscore = document.createElement('h1')
-            underscore.setAttribute('class', 'underscore')
-            underscore.innerText = "?"
-            solutionDisplay.append(underscore)
-        }
+/*----- event listeners -----*/
+
+document.addEventListener('DOMContentLoaded', function () {
+    const solutionDisplay = document.querySelector('#solution-display');
         
-        
-        
-    })
+    for (let i = 0; i < wordToGuess.length; i++) {
+        const underscore = document.createElement('h1')
+        underscore.setAttribute('class', 'underscore')
+        underscore.innerText = "?"
+        solutionDisplay.append(underscore)
+    }
+})
 
-    console.log('hiii')
-
-    // document.addEventListener('DOMContentLoaded', function () {
-    formLocation.addEventListener('input', (e) => {
-        e.preventDefault()
-        const userInput = document.querySelector('#guess-input').value
+formLocation.addEventListener('input', (e) => {
+    e.preventDefault()
+    const userInput = document.querySelector('#guess-input').value
+    
+    if (wordToGuess.includes(userInput.toUpperCase())) {
         
-        if (wordToGuess.includes(userInput.toUpperCase())) {
-            
-            const foundIdx = wordToGuess.indexOf(userInput.toUpperCase())
-            console.log(foundIdx)
-        } else {
-            console.log("Try again!")
-            
-        }
-        })
-    // })
+        const foundIdx = wordToGuess.indexOf(userInput.toUpperCase())
+        console.log(foundIdx)
+    } else {
+        console.log("Try again!")
+    }
+})
+
+// console.log('hiii')
+
+// OLD CODE
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+// })
     
     // const checkArr = (userInput) => {
     //     if (wordToGuess.includes(userInput.toUpperCase())) {
@@ -72,7 +59,6 @@ console.log('js-loaded!')
     // checkArr(event.currentTarget.input.value)
     
     
-    /*----- event listeners -----*/
 
 
 /*----- functions -----*/
