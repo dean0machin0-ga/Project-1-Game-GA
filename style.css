@@ -1,7 +1,7 @@
 /* global styles  */
 
 *{
-    /* border: 3px solid red; */
+    border: 3px solid red;
     box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: rgb(41, 41, 101);
+    /* background-color: rgb(41, 41, 101); */
     font-family: cursive;
     font-size: 16px;
 }
@@ -50,11 +50,12 @@ h3 {
     margin: 0 auto;
 }
 
-.button-wrapper {
-    display: grid;
-    grid-template-columns: [first] 45px [line2] 45px [line3] 45px [line4] 45px [line5];   
-    flex-flow: row wrap;
+.guess-input-wrapper {
+    /* display: grid; */
+    /* grid-template-columns: [first] 45px [line2] 45px [line3] 45px [line4] 45px [line5];    */
+    /* flex-flow: row wrap; */
     padding: 1.0rem;
+    margin-right: 70%;
     /* justify-content: space-evenly; */
     /* gap: 0.3rem; */
     /* align-content: ; */
@@ -69,7 +70,7 @@ h3 {
 }
 
 .solution-wrapper {
-    border: 3px solid rgb(247, 1, 227);
+    /* border: 3px solid rgb(247, 1, 227); */
     /* background-color: red; */
     display: grid;
     grid-template-columns: repeat(10, 2fr);
