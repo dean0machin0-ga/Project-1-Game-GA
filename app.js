@@ -41,7 +41,7 @@ console.log('js-loaded!')
 
     console.log('hiii')
 
-    document.addEventListener('DOMContentLoaded', function () {
+    // document.addEventListener('DOMContentLoaded', function () {
     formLocation.addEventListener('input', (e) => {
         e.preventDefault()
         const userInput = document.querySelector('#guess-input').value
@@ -55,7 +55,7 @@ console.log('js-loaded!')
             
         }
         })
-    }
+    // })
     
     // const checkArr = (userInput) => {
     //     if (wordToGuess.includes(userInput.toUpperCase())) {
